@@ -1,3 +1,17 @@
+require 'faker'
+
+Article.destroy_all
+
+puts 'Creating 12 fake articles'
+12.times do
+  article = Article.new(
+    title: Faker::Book.title,
+    content: Faker::Quotes::Shakespeare.hamlet_quote
+  )
+  article.save
+end
+
+puts 'Finished!'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #

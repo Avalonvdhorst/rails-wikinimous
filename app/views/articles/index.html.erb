@@ -1,0 +1,14 @@
+<div class="banner">
+  <h1>Welcome to Ava's Articles</h1>
+  <%= link_to "New article", new_article_path, :class => "new-article" %>
+</div>
+<div class="container">
+  <div class="cards">
+    <% @articles.reverse.each do |article| %>
+    <div class="article-card"
+      style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80)">
+      <h4> <%= link_to article.title, article_path(article.id), :class => "link-style" %> </h4>
+    </div>
+    <% end %>
+  </div>
+</div>

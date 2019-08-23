@@ -1,0 +1,122 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.banner h1 {
+  color: white;
+  font-weight: lighter;
+  padding: 50px;
+}
+
+.banner {
+  background-color: rgb(41, 83, 102);
+  opacity: 0.8;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.new-article {
+  position: absolute;
+  top: 65px;
+  right: 60px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.fa-pencil {
+  position: absolute;
+  top: 65px;
+  right: 90px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.fa-trash-o {
+  position: absolute;
+  top: 65px;
+  right: 60px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.new-article:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+.container h2 {
+  padding-top: 60px;
+}
+
+h4 {
+  content-align: center;
+}
+
+.link-style {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: center;
+  text-align: center;
+}
+
+.link-style:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.content-text {
+  font-weight: lighter;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.article-card {
+  height: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 5px 14px -10px rgba(0,0,0,0.75);
+  //image-size: cover;
+}
+
+.create-article {
+  margin: 50px;
+}
+
+.form {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.button-custom {
+  border: 1px solid black;
+  padding: 17px;
+  margin-top: 20px;
+  background-color: rgba(124, 137, 142, 0.7);
+}
+
+.button-custom:hover {
+  background-color: rgb(124, 137, 142,);
+}
+
+
